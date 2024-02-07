@@ -1,0 +1,18 @@
+{
+    "name": "MoldyChrome",
+    "version": "1",
+    "permissions": [],
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://thatsmybis.com/*"
+            ],
+            "js": ["thatsmybis-com.js"],
+            "run_at": "document_end"
+        }
+    ], 
+    "manifest_version": 3
+}
